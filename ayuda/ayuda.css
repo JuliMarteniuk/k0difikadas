@@ -1,0 +1,38 @@
+.cuerpito{
+    background-color:rgba(233, 12, 207, 0.483);
+}
+
+img{
+    height: 300px;
+    width: 600px;
+    border-radius: 20px;
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* display: grid; */
+    /* place-items: center; */
+
+}
+
+.p1,
+.p2{
+    margin-left: 300px;
+    margin-right: 300px;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    color: white;
+}
+
+.p3{
+    margin-left: 300px;
+    margin-right: 300px;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    color: white;
+}
+
+.contenedor-imagen{
+    text-align: center;
+
+}

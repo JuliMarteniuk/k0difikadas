@@ -1,0 +1,56 @@
+
+#caja21,
+#caja22,
+#caja23{
+    width: 10em;
+    height: 3em;
+    position: absolute;
+    top: 70%;
+    text-align: center;
+}
+
+#caja21{
+    left: 39%;
+    background-color:  rgba(235, 120, 197, 0);
+    top: 30%;
+    border-radius: 15px;
+    text-align: center;
+    font-size: x-large;
+}
+
+#caja22{
+    left: 39%;
+    background-color:  rgba(235, 120, 197, 0);
+    top: 45%;
+    border-radius: 15px;
+    text-align: center;
+    font-size: x-large;
+}
+
+#caja23{
+    left: 39%;
+    background-color:  rgba(235, 120, 197, 0);
+    top: 60%;
+    border-radius: 15px;
+    text-align: center;
+    font-size: x-large;
+}
+
+#caja24{
+    left: 36%;
+    
+    background-color:  rgba(235, 120, 197, 0);
+    top: 75%;
+    border-radius: 15px;
+    text-align: center;
+    font-size: x-large;
+}
+
+#p{
+    
+    
+    font-size: xx-large;
+    text-align: center;
+    position: absolute;
+    
+}

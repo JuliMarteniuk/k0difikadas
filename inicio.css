@@ -1,0 +1,280 @@
+#caja1,
+#caja2,
+#caja3,
+#caja4,
+#caja5,
+#caja6,
+#caja7,
+#caja8,
+#caja9,
+#caja10,
+#caja11{
+    width: 4em;
+    height: 4em;
+    position: absolute;
+    top: 12 ;
+    text-align: center;
+    border-radius: 20px;
+    align-items: center;
+    vertical-align: center;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+#caja1{
+    left: 4%;
+    background: #FF5E5E;
+    animation: moving-box 3s 2 alternate running;
+    top: 10%;
+}
+
+
+@keyframes moving-box{
+    0%{
+        left:4% ;
+    }
+    100%{
+        left: 45%;
+    }
+
+}
+#caja2{
+    left: 12%;
+    background: #FDA703;
+    animation: moving-box1 3s 2 alternate running;
+    top: 15%;
+}
+@keyframes moving-box1{
+    0%{
+        left:12% ;
+    }
+    100%{
+        left: 45%;
+    }
+
+}
+#caja3{
+    left: 20%;
+    background: #FFEC03;
+    animation: moving-box2 3s 2 alternate running;
+    top: 20%;
+}
+
+@keyframes moving-box2{
+    0%{
+        left: 20% ;
+    }
+    100%{
+        left: 45%;
+    }
+
+}
+#caja4{
+    left: 28%;
+    background: #7FE960;
+    animation: moving-box3 3s 2 alternate running;
+    top: 25%;
+}
+
+@keyframes moving-box3{
+    0%{
+        left: 28% ;
+    }
+    100%{
+        left: 45%;
+    }
+
+}
+#caja5{
+    left: 36%;
+    background: #02E1D9;
+    animation: moving-box4 3s 2 alternate running;
+    top: 30%;
+}
+@keyframes moving-box4{
+    0%{
+        left: 36% ;
+    }
+    100%{
+        left: 45%;
+    }
+
+}
+
+
+
+#caja7{
+    right: 5%;
+    background: #FF0398  ; 
+    animation: moving-box6 3s 2 alternate running;
+    top: 10%;
+}
+
+@keyframes moving-box6{
+    0%{
+        right: 5%;
+    }
+    100%{
+        right: 47%;
+    }
+}
+
+
+#caja8{
+    right: 13%;
+    background-color: #FFADF1  ; 
+    animation: moving-box7 3s 2 alternate running;
+    top: 15%;
+}
+
+@keyframes moving-box7{
+    0%{
+        right: 13%;
+    }
+    100%{
+        right: 47%;
+    }
+}
+
+
+#caja9{
+    right: 21%;
+    background: #CF8BF9 ;  
+    animation: moving-box8 3s 2 alternate running;
+    top: 20%;
+}
+
+@keyframes moving-box8{
+    0%{
+        right: 21%;
+    }
+    100%{
+        right: 47%;
+    }
+}
+
+#caja10{
+    right: 29%;
+    background: #5502BD  ;
+    animation: moving-box9 3s 2 alternate running;
+    top: 25%;
+}
+
+@keyframes moving-box9{
+    0%{
+        right: 29%;
+    }
+    100%{
+        right: 47%;
+    }
+}
+
+#caja11{
+    right: 37%;
+    background-color: rgba(21, 0, 255, 0.993)  ;
+    animation: moving-box10 3s 2 alternate running;
+    top: 30%;
+}
+
+@keyframes moving-box10{
+    0%{
+        right: 37%;
+    }
+    100%{
+        right: 47%;
+    }
+}
+
+
+
+#caja6{
+    left: 46%;
+    background: #0ca1e0;
+    top: 35%;
+}
+
+
+#caja12,
+#caja13,
+#caja14,
+#caja15,
+#jaca16,
+#caja17{
+    width: 1em;
+    height: 1em;
+    position: absolute;
+    top: 12 ;
+    text-align: center;
+    transform: rotate(150deg);
+}
+
+#caja12{
+    left: 1%;
+    background-color: rgb(62, 62, 62);
+    animation: moving-box11 1s 1 alternate running;
+    bottom: 7%;
+}
+
+#caja13{
+    left: 1%;
+    background-color: rgb(62, 62, 62);
+    animation: moving-box11 2s 1 alternate running;
+    bottom: 7%;
+}
+
+#caja14{
+    left: 1%;
+    background-color: rgb(62, 62, 62);
+    animation: moving-box11 3s 1 alternate running;
+    bottom: 7%;
+}
+
+#caja15{
+    left: 1%;
+    background-color: rgb(62, 62, 62);
+    animation: moving-box11 4s 1 alternate running;
+    bottom: 7%;
+}
+
+#caja16{
+    left: 1%;
+    background-color: rgb(62, 62, 62);
+    animation: moving-box11 5s 1 alternate running;
+    bottom: 7%;
+}
+
+#caja17{
+    left: 1%;
+    background-color: rgb(62, 62, 62);
+    animation: moving-box11 6s 1 alternate running;
+    bottom: 7%;
+}
+
+
+@keyframes moving-box11{
+    0%{
+        left: 5%;
+    }
+    100%{
+        left: 95%;
+    }
+}
+
+
+#caja20{
+    width: 10em;
+    height: 3em;
+    position: absolute;
+    top: 70%;
+    text-align: center;
+}
+
+#caja20{
+    left: 42.5%;
+    background-color: rgb(115, 115, 112);
+    top: 65%;
+    border-radius: 15px;
+    text-align: center;
+}
+

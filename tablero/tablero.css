@@ -1,0 +1,76 @@
+body{
+    display: grid;
+    place-items: center;
+    background-color:linear-gradient(to bottom, #d768ff, #fa86c0);;
+    position: relative;
+    display: block;
+}
+#tablero{
+    background-color: #D6E8D9;
+    height: 400px;
+    width: 800px;
+    display: grid;
+    position: relative;
+    vertical-align: middle;
+    margin: auto;
+    margin-top: 100px;
+}
+.boton{
+    height: 30px;
+    width: 60px;
+    background-color: #F1C9C2;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 10px;
+    -webkit-border-radius: 5px;
+    border-radius: 10px;
+    margin: 10px 5px;
+    position: relative;
+}
+.dino{
+    width: 50px;
+    height: 50px;
+    background-image: url(../Imagenes/dino-run1.png);
+    background-size: 50px 50px;
+    position: relative;
+    top: 350px;
+}
+.salto{
+    animation: salto 0.3s linear;
+}
+@keyframes salto {
+    0%{
+        top: 350px;
+    }   
+    30%{
+        top: 300px;
+    } 
+    50%{
+        top: 250px;
+    }
+    80%{
+        top:300px;
+    }
+    100%{
+        top: 350px;
+    }
+}
+.cactus{
+    width: 100px;
+    height: 70px;
+    position: relative;
+    top: 140px;
+    left: 580px;
+    background-image: url(../Imagenes/cactus1.png); /*Preguntarle a widi porque se repite si es un solo cactus*/
+    background-size: 34px 70px;
+    animation: block 3s infinite linear;
+}
+@keyframes block {
+    0%{
+        left: 760px;
+    }
+    100%{
+        left: -20px
+    }
+}

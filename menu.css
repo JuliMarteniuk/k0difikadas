@@ -1,12 +1,33 @@
-
+body{
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-height: 100%;
+    background: radial-gradient(ellipse at top left, #FF5E5E, #FDA703,#FFEC03,#7FE960, #02E1D9,#FF0398  , #f275dd  , #934ebe , #5502BD , rgba(21, 0, 255, 0.993) );
+}
+#container{
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex-direction: column;
+    margin-left: -160px;
+}
 #caja21,
 #caja22,
-#caja23{
+#caja23,
+#caja24{
+    margin-top: 34.5px;
     width: 10em;
     height: 3em;
-    position: absolute;
+    position: relative;
     top: 70%;
     text-align: center;
+    text-decoration: none;
+    color: #fff;
 }
 
 #caja21{
@@ -51,6 +72,6 @@
     
     font-size: xx-large;
     text-align: center;
-    position: absolute;
+    position: relative;
     
 }

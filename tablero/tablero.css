@@ -1,16 +1,16 @@
 body{
     display: grid;
     place-items: center;
-    background: radial-gradient(ellipse at top left, #FF5E5E, #FDA703,#FFEC03,#7FE960, #02E1D9,#FF0398  , #f275dd  , #934ebe , #5502BD , rgba(21, 0, 255, 0.993) );
     position: relative;
     display: block;
-    height: 100%;
-    width: 100%;
+    background-color: ;
 }
 #tablero{
-    background-color: #D6E8D9;
+    /*background-image: url(../Imagenes/8170a185bc587113fdfbecf13964c6a8.jpg);*/
+    background: radial-gradient(ellipse at top left, #e388ff, #ff74ff,#ff82d9);
+    scale: 100%;
     height: 400px;
-    width: 800px;
+    width: 1000px;
     display: grid;
     position: relative;
     vertical-align: middle;
@@ -70,7 +70,7 @@ body{
 }
 @keyframes block {
     0%{
-        left: 760px;
+        left: 900px;
     }
     100%{
         left: -20px

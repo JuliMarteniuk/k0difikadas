@@ -16,22 +16,24 @@ body{
     flex-direction: column;
     margin-left: -160px;
 }
+
 #caja21,
 #caja22,
 #caja23,
 #caja24{
-    margin-top: 34.5px;
+    margin-top: 15px;
     width: 10em;
     height: 3em;
     position: relative;
     top: 70%;
+    left: 30%;
     text-align: center;
     text-decoration: none;
     color: #fff;
 }
 
 #caja21{
-    left: 39%;
+    left: 35%%;
     background-color:  rgba(235, 120, 197, 0);
     top: 30%;
     border-radius: 15px;
@@ -40,7 +42,7 @@ body{
 }
 
 #caja22{
-    left: 39%;
+    left: 32%;
     background-color:  rgba(235, 120, 197, 0);
     top: 45%;
     border-radius: 15px;
@@ -49,7 +51,7 @@ body{
 }
 
 #caja23{
-    left: 39%;
+    left: 32%;
     background-color:  rgba(235, 120, 197, 0);
     top: 60%;
     border-radius: 15px;
@@ -58,7 +60,7 @@ body{
 }
 
 #caja24{
-    left: 36%;
+    left: 35%;
     
     background-color:  rgba(235, 120, 197, 0);
     top: 75%;
@@ -69,7 +71,7 @@ body{
 
 #p{
     
-    
+    margin: 21.5px;
     font-size: xx-large;
     text-align: center;
     position: relative;

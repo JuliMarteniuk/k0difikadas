@@ -1,72 +1,25 @@
+const width = 56;
+const height = 28;
+const tablero = document.querySelector(".tablero");
+const scoreDisplay = document.getElementById("score");
+let score = 0;
+const squares = [];
 
+console.log("Hola1");
+const dinoCurrentIndex = 28;
 
-var sueloY=22;
-var velY=0;
-var impulso=900;
-var gravedad=2500;
+console.log("Hola");
+squares[dinoCurrentIndex].classList.add("dino");
+console.log(squares[dinoCurrentIndex].classList.add("dino"));
 
-var dinoposicionX=42;
-var dinoposicionY=sueloY;
-var sueloX=0;
-var velEscenario = 1280/3;
-var gameVel = 1;
-var score = 0;
-var parado= false;
-var saltando = false;
-var contenedor;
-var dino;
-var textoscore;
-var suelo;
-var gameover;
-function Start(){
-    gameover = document.querySelector(".game-over");
-    suelo=document.queryselector(".suelo");
-    contenedor=document.queryselector(".tablero");
-    textoscore=document.queryselector(".score");
-    dino=document.queryselector(".dino");
-    document.addEventListener("keydown", handlekeydown);
-}
-function handlekeydown(ev){
-    if(ev.keycode==32){
-        saltar();
+function control(e){
+    squares[dinoCurrentIndex].classList.remove("dino");
+    console.log("Hola2");
+    console.log(e.keycode)
+    switch (e.keycode) {
+        case 87: //w
+        if(dinoCurrentIndex - width >= 0 && !squares[dinoCurrentIndex - width].classList.containn("cactus"))
+        console.log(e.keycode);
+        
     }
-}
-function Update(){
-    moversuelo();
-    moverdinosaurio();
-    velY-=gravedad*deltatime;
-}
-
-function moversuelo(){
-    sueloX+=calculardesplazamiento();
-    suelo.style.left=-(sueloX%contenedor.clientwidth)+"px";
-}
-
-function calculardesplazamiento(){
-    return velEscenario*deltatime*gameVel;
-}
-
-function saltar(){
-    if (dinoposicionY==sueloY){
-        saltando=true;
-        velY=impulso;
-        dino.classlis.remove("dino-corriendo");
-    }
-}
-
-function moverdinisaurio(){
-    dinoposicionY+=velY*deltatime;
-    if (dinoposicionY<sueloY){
-        tocarsuelo();
-    }
-    dino.style.bottom=dinoposicionY+"px";
-}
-
-function tocarsuelo(){
-    dinoposicionY=sueloY;
-    velY=0;
-    if (saltando){
-        dino.classlist.add("dino-corriendo");
-    }
-    saltando=false;
 }

@@ -6,7 +6,7 @@ body{
     background-color: white;
 }
 #tablero{
-    /*background-image: url(../Imagenes/8170a185bc587113fdfbecf13964c6a8.jpg);*/
+    
     background: radial-gradient(ellipse at top left, #e388ff, #ff74ff,#ff82d9);
     scale: 100%;
     height: 400px;

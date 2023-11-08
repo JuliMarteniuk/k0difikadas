@@ -3,7 +3,7 @@ body{
     place-items: center;
     position: relative;
     display: block;
-    background-color: ;
+    background-color: white;
 }
 #tablero{
     /*background-image: url(../Imagenes/8170a185bc587113fdfbecf13964c6a8.jpg);*/
@@ -58,6 +58,24 @@ body{
         top: 350px;
     }
 }
+
+.dino-corriendo{
+    animation: animarDino 0.25s steeps(2)infinite;
+}
+
+.dino-estrellado{
+    background-position-x: -252px ;
+}
+
+.suelo{
+    width: 200%;
+    height: 42%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: url(../Imagenes/);
+}
+
 .cactus{
     width: 100px;
     height: 70px;

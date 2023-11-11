@@ -5,7 +5,7 @@ body{
     flex-wrap: wrap;
     flex-direction: column;
     max-height: 100%;
-    background: linear-gradient(to bottom right, #FF5E5E, #FDA703,#FFEC03,#7FE960, #02E1D9,#e642a1  , #f275dd  , #934ebe );
+    background: linear-gradient(to bottom right, #FF5E5E, #f3a81e,#f1e130,#7cf159, #02E1D9, #f240d5  , #fd01d3);
     margin: 83px;
     
 }

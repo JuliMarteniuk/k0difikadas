@@ -5,7 +5,7 @@ body{
     flex-wrap: wrap;
     flex-direction: column;
     max-height: 100%;
-    background: radial-gradient(ellipse at top left, #FF5E5E, #FDA703,#FFEC03,#7FE960, #02E1D9,#FF0398  , #f275dd  , #934ebe , #5502BD , rgba(21, 0, 255, 0.993) );
+    background: linear-gradient(to bottom right, #FF5E5E, #FDA703,#ffe203,#9be960, rgb(8, 187, 181)  , #406df5  , #824ebe , rgb(231, 63, 206) , rgba(238, 31, 141, 0.993));
     margin: 29.5px;
 }
 #container{

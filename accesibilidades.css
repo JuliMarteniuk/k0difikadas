@@ -5,8 +5,8 @@ body{
     flex-wrap: wrap;
     flex-direction: column;
     max-height: 100%;
-    background: radial-gradient(ellipse at top left, #FF5E5E, #FDA703,#FFEC03,#7FE960, #02E1D9,#FF0398  , #f275dd  , #934ebe , #5502BD , rgba(21, 0, 255, 0.993) );
-    margin: 29.5px;
+    background: linear-gradient(to bottom right, #FF5E5E, #FDA703,#FFEC03,#7FE960, #02E1D9,#e642a1  , #f275dd  , #934ebe );
+    margin: 10%;
 }
 #container{
     display: flex;
@@ -19,9 +19,7 @@ body{
 }
 
 #caja21,
-#caja22,
-#caja23,
-#caja24{
+#caja22{
     margin-top: 15px;
     width: 10em;
     height: 3em;
@@ -51,30 +49,6 @@ body{
     font-size: x-large;
 }
 
-#caja23{
-    left: 32%;
-    background-color:  rgba(235, 120, 197, 0);
-    top: 60%;
-    border-radius: 15px;
-    text-align: center;
-    font-size: x-large;
-}
-
-#caja24{
-    left: 35%;
-    
-    background-color:  rgba(235, 120, 197, 0);
-    top: 75%;
-    border-radius: 15px;
-    text-align: center;
-    font-size: x-large;
-}
-
 #p{
-    
-    margin: 21.5px;
-    font-size: xx-large;
     text-align: center;
-    position: relative;
-    
 }

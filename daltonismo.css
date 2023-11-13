@@ -5,8 +5,9 @@ body{
     flex-wrap: wrap;
     flex-direction: column;
     max-height: 100%;
-    background: linear-gradient(to bottom right, #FF5E5E, #FDA703,#ffe203,#9be960, rgb(8, 187, 181)  , #406df5  , #824ebe , rgb(231, 63, 206) , rgba(238, 31, 141, 0.993));
-    margin: 29.5px;
+    background: linear-gradient(to bottom right, #FF5E5E, #f3a81e,#f1e130,#7cf159, #02E1D9, #f240d5  , #fd01d3);
+    margin: 83px;
+    
 }
 #container{
     display: flex;
@@ -20,8 +21,7 @@ body{
 
 #caja21,
 #caja22,
-#caja23,
-#caja24{
+#caja23{
     margin-top: 15px;
     width: 10em;
     height: 3em;
@@ -50,7 +50,6 @@ body{
     text-align: center;
     font-size: x-large;
 }
-
 #caja23{
     left: 32%;
     background-color:  rgba(235, 120, 197, 0);
@@ -60,21 +59,6 @@ body{
     font-size: x-large;
 }
 
-#caja24{
-    left: 35%;
-    
-    background-color:  rgba(235, 120, 197, 0);
-    top: 75%;
-    border-radius: 15px;
-    text-align: center;
-    font-size: x-large;
-}
-
 #p{
-    
-    margin: 21.5px;
-    font-size: xx-large;
     text-align: center;
-    position: relative;
-    
 }

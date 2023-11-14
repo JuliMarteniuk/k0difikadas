@@ -25,6 +25,7 @@ function Loop() {
     requestAnimationFrame(Loop);
 }
 
+|
 //****** define e inicializa las variables ********//
 
 var sueloY = 22;
@@ -139,7 +140,7 @@ function CalcularDesplazamiento() {
 // cuando muere el dinosaurio se muestra la imagen del dinosaurio  y parado pasa a true
 function morir() {
     dino.classList.remove("dino-corriendo");
-    dino.classList.add("dino-estrellado");
+    dino.classList.add("dino-muerto");
     parado = true;
 }
 

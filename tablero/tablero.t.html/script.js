@@ -25,7 +25,7 @@ function Loop() {
     requestAnimationFrame(Loop);
 }
 
-|
+
 //****** define e inicializa las variables ********//
 
 var sueloY = 22;

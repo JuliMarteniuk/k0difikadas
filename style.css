@@ -5,7 +5,7 @@
 
 body{
     height: 100vh;
-    background: #ffffff;
+    background: #dacdcd;
     display: flex;
     align-items: center;
 }
@@ -17,21 +17,21 @@ body{
     
     position: relative;
 
-    background:white;/*linear-gradient(#90ebff, white);*/
+    background:rgb(194, 222, 233);/*linear-gradient(#90ebff, white);*/
     transition: background-color 1s linear;
     overflow: hidden;
 }
 
 .mediodia {
-    background-color: #ffdcf3;
+    background-color: rgb(146, 181, 245);
 }
 
 .tarde {
-    background-color: #ffadad;
+    background-color: rgb(146, 181, 245);
 }
 
 .noche {
-    background-color: #aca8c7;
+    background-color: rgb(146, 181, 245);
 }
 
 .dino {
@@ -53,7 +53,16 @@ body{
     animation: animarDino 0.25s steps(2) infinite;
 }
 .dino-muerto {
+    width: 84px;
+    height: 84px;
+    position: absolute;
+    bottom: 22px;
+    left: 42px;
+    z-index: 2;
     background-position-x: -252px;
+    background: url(img/muerto.png);
+    background-size: 85px 90px;
+    background-position-X: 0PX;
 }
 
 .suelo {
@@ -64,7 +73,7 @@ body{
     bottom: 0;
     left: 0;
 
-    background: url(img/ground2.png) repeat-x 0px 0px;
+    background: url(img/suelo2.png) repeat-x 0px 0px;
     background-size: 50% 42px;
 
 }

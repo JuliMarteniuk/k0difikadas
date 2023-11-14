@@ -20,7 +20,7 @@ function Loop() {
     requestAnimationFrame(Loop);
 }
 
-//****** GAME LOGIC ********//
+//****** LOGICA JUEGO ********//
 
 var sueloY = 22;
 var velY = 0;
@@ -125,7 +125,7 @@ function CalcularDesplazamiento() {
 
 function morir() {
     dino.classList.remove("dino-corriendo");
-    dino.classList.add("dino-estrellado");
+    dino.classList.add("dino-muerto");
     parado = true;
 }
 

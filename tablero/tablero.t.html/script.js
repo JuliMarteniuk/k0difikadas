@@ -1,17 +1,22 @@
+// se almacena el calculo del tiempo
 var time = new Date();
-var deltaTime = 0;
+//tiempo entre dos fotogramas
+var deltaTime = 1;
 
+//verifica si el documento está completamente cargado o en un estado interactivo.
 if(document.readyState === "complete" || document.readyState === "interactive"){
     setTimeout(Init, 1);
 }else{
     document.addEventListener("DOMContentLoaded", Init); 
 }
 
+// le vuelve a asignar a la variable time el calculo del timpo y llama a las funciones start y loop
 function Init() {
     time = new Date();
     Start();
     Loop();
 }
+
 
 function Loop() {
     deltaTime = (new Date() - time) / 1000;
@@ -20,7 +25,7 @@ function Loop() {
     requestAnimationFrame(Loop);
 }
 
-//****** GAME LOGIC ********//
+//****** define e inicializa las variables ********//
 
 var sueloY = 22;
 var velY = 0;
@@ -59,6 +64,7 @@ var textoScore;
 var suelo;
 var gameOver;
 
+// inicializa los elementos del juego y llama a los selectores
 function Start() {
     gameOver = document.querySelector(".game-over");
     suelo = document.querySelector(".suelo");
@@ -68,6 +74,7 @@ function Start() {
     document.addEventListener("keydown", HandleKeyDown);
 }
 
+// logica del juego
 function Update() {
     if(parado) return;
     
@@ -82,12 +89,14 @@ function Update() {
     velY -= gravedad * deltaTime;
 }
 
+// tecla para que salte 
 function HandleKeyDown(ev){
     if(ev.keyCode == 32){
         Saltar();
     }
 }
 
+// hace que salte el dinosaurio
 function Saltar(){
     if(dinoPosY === sueloY){
         saltando = true;
@@ -96,6 +105,7 @@ function Saltar(){
     }
 }
 
+// mueve el suelo
 function MoverDinosaurio() {
     dinoPosY += velY * deltaTime;
     if(dinoPosY < sueloY){
@@ -105,6 +115,7 @@ function MoverDinosaurio() {
     dino.style.bottom = dinoPosY+"px";
 }
 
+// cuando toca el suelo el dinosaurio a saltando se le asigna falso 
 function TocarSuelo() {
     dinoPosY = sueloY;
     velY = 0;
@@ -114,20 +125,24 @@ function TocarSuelo() {
     saltando = false;
 }
 
+// mueve solo el suelo hacia la izquierda y hace el efecto que esta infinitamnete pasando
 function MoverSuelo() {
     sueloX += CalcularDesplazamiento();
     suelo.style.left = -(sueloX % contenedor.clientWidth) + "px";
 }
 
+// 
 function CalcularDesplazamiento() {
     return velEscenario * deltaTime * gameVel;
 }
 
+// cuando muere el dinosaurio se muestra la imagen del dinosaurio  y parado pasa a true
 function morir() {
     dino.classList.remove("dino-corriendo");
     dino.classList.add("dino-estrellado");
     parado = true;
 }
+
 
 function DecidirCrearObstaculos() {
     tiempoHastaObstaculo -= deltaTime;
@@ -142,6 +157,7 @@ function DecidirCrearNubes() {
         CrearNube();
     }
 }
+
 
 function CrearObstaculo() {
     var obstaculo = document.createElement("div");

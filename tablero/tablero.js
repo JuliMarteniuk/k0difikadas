@@ -20,6 +20,24 @@ function control(e){
         case 87: //w
         if(dinoCurrentIndex - width >= 0 && !squares[dinoCurrentIndex - width].classList.containn("cactus"))
         console.log(e.keycode);
-        
+    }
+}
+function HandleKeyDown(ev){
+    if(ev.keyCode == 32){
+        Saltar();
+    }
+}
+
+function Saltar(){
+    if(!saltando){
+        saltando = true;
+        dino.classList.remove("dino-corriendo");
+        audioSalto.currentTime = 0;
+        audioSalto.play();
+        if(dinoPosY > nivelDelMarCubriendo){
+            velY = impulso;
+        }else{
+            velY = impulsoEnAgua;
+        }
     }
 }
